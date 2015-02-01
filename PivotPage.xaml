@@ -1,0 +1,156 @@
+﻿<Page
+    x:Class="GitMe.PivotPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GitMe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:GitMe.Data"
+    mc:Ignorable="d"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <CommonNavigationTransitionInfo IsStaggeringEnabled="True"/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid>
+        <Pivot x:Uid="Pivot" Title="git:me" x:Name="pivot" CommonNavigationTransitionInfo.IsStaggerElement="True">
+            <!--Pivotelement eins-->
+            <PivotItem
+                x:Uid="PivotItem1"
+                Margin="19,14.5,0,0"
+                Header="first"
+                DataContext="{Binding AllNotifications}"
+                CommonNavigationTransitionInfo.IsStaggerElement="True">
+                <Grid>
+                
+                <ListView
+                    x:Uid="ListView1"
+                    x:Name="listView1"
+                    Grid.Row="0"
+                    ItemsSource="{Binding Items}"
+                    IsItemClickEnabled="False"
+                    ItemClick="ItemView_ItemClick"
+                    ContinuumNavigationTransitionInfo.ExitElementContainer="True" 
+                    Margin="0,15,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                                <StackPanel Margin="0,0,0,10">
+                                    <StackPanel.Resources>
+                                        <Style x:Key="GitMeHeaderStyle" TargetType="TextBlock">
+                                            <Setter Property="FontSize" Value="28.0"/>
+                                            <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}" />
+                                            <Setter Property="FontWeight" Value="SemiBold" />
+                                            <Setter Property="TextLineBounds" Value="Full" />
+                                            <Setter Property="TextWrapping" Value="NoWrap" />
+                                            <Setter Property="LineHeight" Value="20" />
+                                            <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}" />
+                                        </Style>
+                                        <Style x:Key="GitMeSubHeaderStyle" TargetType="TextBlock">
+                                            <Setter Property="FontSize" Value="24.0"/>
+                                            <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}" />
+                                            <Setter Property="TextLineBounds" Value="Full" />
+                                            <Setter Property="TextWrapping" Value="NoWrap" />
+                                            <Setter Property="LineHeight" Value="20" />
+                                            <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}" />
+                                        </Style>
+                                        <Style x:Key="GitMeSinceStyle" TargetType="TextBlock"
+                                               BasedOn="{StaticResource ListViewItemSubheaderTextBlockStyle}">
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                            <Setter Property="FontSize" Value="12.0"/>
+                                        </Style>
+                                    </StackPanel.Resources>
+                                    <TextBlock        
+                                        Text="{Binding RepoFullName}"
+                                        Pivot.SlideInAnimationGroup="1"
+                                        CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                        Style="{ThemeResource GitMeHeaderStyle}"
+                                        Margin="0"/>
+                                    
+                                    <StackPanel 
+                                    VerticalAlignment="Top"
+                                    HorizontalAlignment="Left"
+                                    Orientation="Horizontal">
+                                        <Image Width="40" Margin="0,0,15,0" Source="{Binding ImagePath}"/>
+                                        <StackPanel>
+                                            <TextBlock
+                                                Text="{Binding AtUserLogin}"
+                                                Pivot.SlideInAnimationGroup="1"
+                                                CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                                Style="{ThemeResource GitMeSubHeaderStyle}"
+                                                Margin="0"/>
+                                            <TextBlock
+                                                Text="{Binding Since}"
+                                                TextWrapping="NoWrap"
+                                                Pivot.SlideInAnimationGroup="1"
+                                                CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                                Style="{ThemeResource GitMeSinceStyle}"
+                                                Margin="0"/>
+                                        </StackPanel>
+                                </StackPanel>
+                                    <TextBlock        
+                                        Text="{Binding SubjectTitle}"
+                                        Pivot.SlideInAnimationGroup="2"
+                                        CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                        Style="{ThemeResource  ListViewItemContentTextBlockStyle}"
+                                        FontWeight="Bold"/>
+                                    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                                        <TextBlock 
+                                            Text="{Binding Body}"
+                                            TextWrapping="WrapWholeWords"
+                                            MaxHeight="80"
+                                            Pivot.SlideInAnimationGroup="2" 
+                                            CommonNavigationTransitionInfo.IsStaggerElement="True" 
+                                            Style="{ThemeResource ListViewItemContentTextBlockStyle}"
+                                            Margin="0,0,0,5"/>
+                                    </ScrollViewer>
+                                    <HyperlinkButton NavigateUri="{Binding HtmlUrl}" IsEnabled="True">
+                                        <TextBlock Text="{Binding HtmlUrlString}" TextWrapping="NoWrap"
+                                                   Style="{ThemeResource ListViewItemContentTextBlockStyle}"
+                                                   FontWeight="Normal"
+                                                   Foreground="Blue"/>
+                                    </HyperlinkButton>
+                                </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+               
+                </ListView>
+                    <Border x:Name="StatusBorder" 
+                            Grid.Row="1" 
+                            Visibility="Collapsed" 
+                            VerticalAlignment="Bottom"
+                            Margin="-19,0,0,0">
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <TextBlock x:Name="StatusBlock" 
+                               Foreground="White" 
+                               FontWeight="Bold" 
+                               Margin="12, 10, 12, 10" 
+                               TextWrapping="WrapWholeWords"
+                               MaxLines="6"/>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+
+            </PivotItem>
+
+            <!--Pivotelement zwei-->
+            
+        </Pivot>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Uid="RefreshAppBarButton" x:Name="RefreshAppBarButton" Icon="Refresh" Click="RefreshAppBarButton_Click" />
+            <AppBarButton x:Uid="SettingAppBarButton" x:Name="SettingAppBarButton" Icon="Setting" Click="SettingsAppBarButton_Click" />
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Uid="AboutButton" x:Name="AboutButton" Label="über" Click="AboutButton_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

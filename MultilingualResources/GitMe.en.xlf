@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="de-DE" target-language="en" original="GitMe_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="GitMe" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1085.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resources">
+        <trans-unit id="Resources\AboutPage\Text" translate="yes" xml:space="preserve">
+          <source>git:me bringt die Github Benachrichtigungen als Nachrichtenstream auf das Mobilgerät. In Verbindung mit dem Browser ermöglicht die App eine praktische Interaktion zwischen dem Nachrichtenstream und dem Editieren einzelner Benachrichtigungen (siehe Screenshots im Windows Store).
+
+git:me ist eine kostenlose App zur Nutzung auf eigenes Risiko. Die App verzichtet auf Werbeeinblendungen und Lästigkeitsfeatures. In Abhängigkeit von der Nachfrage nach Zusatzfeatures kann zu einem späteren Zeitpunkt eine In-App Kaufoption hinzugefügt werden.
+
+Anregungen und Fehlerberichte bitte an @fbmnds (https://twitter.com/fbmnds).</source>
+          <target state="signed-off">git:me keeps a Github notification timeline of the current notification stream available on your mobile device. The app provides a comfortable interaction with the mobile browser for editing single items. git:me is fairly easy to use, please refer to the screenshots in the Web Store.  
+
+git:me is provided on an as-is basis free of charge. It will neither nag to buy nor annoy with ads. At a later stage, depending on the demand for further features, an in-app purchase option may be supplied. 
+
+Please send feedback and bug reports to @fbmnds (https://twitter.com/fbmnds).</target></trans-unit>
+        <trans-unit id="Resources\UnknownUser" translate="yes" xml:space="preserve">
+          <source>(unbekannter Benutzer)</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">(unknown user)</target></trans-unit>
+        <trans-unit id="Resources\UnknownRepository" translate="yes" xml:space="preserve">
+          <source>(unbekanntes Repository)</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">(unknown repository)</target></trans-unit>
+        <trans-unit id="Resources\AboutButton\Label" translate="yes" xml:space="preserve">
+          <source>über</source>
+          <target state="signed-off">about</target>
+        </trans-unit>
+        <trans-unit id="Resources\SecondaryButton1\Label" translate="yes" xml:space="preserve">
+          <source>Github Account</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Github account</target>
+        </trans-unit>
+        <trans-unit id="Resources\RemoveAccountData\Content" translate="yes" xml:space="preserve">
+          <source>Benachrichtigungen löschen</source>
+          <target state="signed-off">Delete Notifications</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotNoData" translate="yes" xml:space="preserve">
+          <source>keine Github Benachrichtigungen vorhanden</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">No data available</target></trans-unit>
+        <trans-unit id="Resources\PivotNoAccount" translate="yes" xml:space="preserve">
+          <source>Github Account konfigurieren → ⚙</source>
+          <target state="signed-off">Configure Github account → ⚙</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotLocalDataSuccess" translate="yes" xml:space="preserve">
+          <source>Lokale Daten geladen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Local data loaded</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotLocalDataError" translate="yes" xml:space="preserve">
+          <source>Fehler beim Laden der lokalen Daten</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Local data failed</target></trans-unit>
+        <trans-unit id="Resources\PivotLocalData" translate="yes" xml:space="preserve">
+          <source>Lokale Daten werden geladen ...</source>
+          <target state="signed-off">Local data ...</target></trans-unit>
+        <trans-unit id="Resources\PivotItem2\Header" translate="yes" xml:space="preserve">
+          <source>Detailansicht</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Detail view</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotItem1\Header" translate="yes" xml:space="preserve">
+          <source>Benachrichtigungen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Notifications</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotInitialization" translate="yes" xml:space="preserve">
+          <source>Initialisierung ...</source>
+          <target state="signed-off">Initialization ...</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotFetchDataSuccess" translate="yes" xml:space="preserve">
+          <source>Neue Github Daten geladen</source>
+          <target state="signed-off">New Github data loaded</target>
+        </trans-unit>
+        <trans-unit id="Resources\PivotFetchDataError" translate="yes" xml:space="preserve">
+          <source>Fehler beim Download neuer Github Daten</source>
+          <target state="signed-off">Error on ew Github data</target></trans-unit>
+        <trans-unit id="Resources\PivotFetchData" translate="yes" xml:space="preserve">
+          <source>Neue Github Daten ...</source>
+          <target state="signed-off">New Github data ...</target>
+        </trans-unit>
+        <trans-unit id="Resources\Pivot\Title" translate="yes" xml:space="preserve">
+          <source>git:me</source>
+          <target state="signed-off">git:me</target>
+        </trans-unit>
+        <trans-unit id="Resources\NoDataAvailable" translate="yes" xml:space="preserve">
+          <source>kieine neuen Daten vorhanden</source>
+          <target state="signed-off">No new data</target>
+        </trans-unit>
+        <trans-unit id="Resources\NewItemTitle" translate="yes" xml:space="preserve">
+          <source>Elementtitel: {0}</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Item title: {0}</target>
+        </trans-unit>
+        <trans-unit id="Resources\NewItemDescription" translate="yes" xml:space="preserve">
+          <source>Elementbeschreibung: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Item description: Porta Pellentesque, mauris quis interdum vehicula ultrices urna sapien Julia, dui nec venenatis odio in augue. CRAs posuere, relating a convallis cursus, neque Malesuada turpis erat, adipiscing neque tortor ac erat ut.</target>
+        </trans-unit>
+        <trans-unit id="Resources\NavigationFailedExceptionMessage" translate="yes" xml:space="preserve">
+          <source>Fehler bei Navigation.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Error in navigation.</target>
+        </trans-unit>
+        <trans-unit id="Resources\Header\Text" translate="yes" xml:space="preserve">
+          <source>git:me</source>
+          <target state="signed-off">git:me</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXYearsAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Jahren</source>
+          <target state="signed-off">{0} years ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXSecondsAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Sekunden</source>
+          <target state="signed-off">{0} seconds ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXMonthsAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Monaten</source>
+          <target state="signed-off">{0} months ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXMinutesAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Minuten</source>
+          <target state="signed-off">{0} minutes ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXHoursAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Stunden</source>
+          <target state="signed-off">{0} hours ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatXDaysAgo" translate="yes" xml:space="preserve">
+          <source>vor {0} Tagen</source>
+          <target state="signed-off">{0} days ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatAYearAgo" translate="yes" xml:space="preserve">
+          <source>vor einem Jahr</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">a year ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatASecondAgo" translate="yes" xml:space="preserve">
+          <source>vor einer Sekunde</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">a second ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatAnHourAgo" translate="yes" xml:space="preserve">
+          <source>vor einer Stunde</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">about an hour ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatAMonthAgo" translate="yes" xml:space="preserve">
+          <source>vor einem Monat</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">about a month ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatAMinuteAgo" translate="yes" xml:space="preserve">
+          <source>vor einer Minute</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">a minute ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FormatADayAgo" translate="yes" xml:space="preserve">
+          <source>vor einem Tag</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">one day ago</target>
+        </trans-unit>
+        <trans-unit id="Resources\FetchingGithubNotificationsError" translate="yes" xml:space="preserve">
+          <source>Fehler beim Download der Github Benachrichtigungen.</source>
+          <target state="signed-off">Error on fetching Github notifications.</target></trans-unit>
+        <trans-unit id="Resources\FetchingGithubNotifications" translate="yes" xml:space="preserve">
+          <source>Download der Github Benachrichtigungen läuft ...</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Fetching Github notifications...</target></trans-unit>
+        <trans-unit id="Resources\FetchingGithubNotificationDetails" translate="yes" xml:space="preserve">
+          <source>Github Benachrichtigungen erhalten, Download der Details läuft ...</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Github notifications received, now fetching details...</target></trans-unit>
+        <trans-unit id="Resources\DefaultDenormalizedNotificationRepoFullName" translate="yes" xml:space="preserve">
+          <source>(leer)</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">(empty)</target>
+        </trans-unit>
+        <trans-unit id="Resources\DefaultDenormalizedNotificationBody" translate="yes" xml:space="preserve">
+          <source>es liegen keine Daten vor</source>
+          <target state="signed-off">no data available</target>
+        </trans-unit>
+        <trans-unit id="Resources\AddAcountHeader\Text" translate="yes" xml:space="preserve">
+          <source>Github Account</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Github account</target>
+        </trans-unit>
+        <trans-unit id="Resources\AddAccountPassword\Text" translate="yes" xml:space="preserve">
+          <source>Passwort</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Password</target>
+        </trans-unit>
+        <trans-unit id="Resources\AddAccountName\Text" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Login</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountTestError3" translate="yes" xml:space="preserve">
+          <source>Der Github Account konnte nicht verifiziert werden.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account could not be verified:</target></trans-unit>
+        <trans-unit id="Resources\AccountTestError2" translate="yes" xml:space="preserve">
+          <source>Der Github Account konnte mit dem gespeicherten Passwort nicht verifiziert werden</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account could not be verified with the stored password</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountTestError1" translate="yes" xml:space="preserve">
+          <source>Der Github Account konnte mit dem angegebenen Passwort nicht verifiziert werden</source>
+          <target state="signed-off">The Github account could not be verified with the new password</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountTestError" translate="yes" xml:space="preserve">
+          <source>Der Github Account nicht verifiziert werden - der Login Name fehlt</source>
+          <target state="signed-off">The Github account could not be verified - the login name is missing</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountTest" translate="yes" xml:space="preserve">
+          <source>Die Github Zugangsdaten sind gültig.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account is valid.</target></trans-unit>
+        <trans-unit id="Resources\AccountSaveError" translate="yes" xml:space="preserve">
+          <source>Der Github Account konnte nicht gespeichert werden:</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account could not be saved:</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountSave" translate="yes" xml:space="preserve">
+          <source>Der Github Account wurde gespeichert.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account has been saved.</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDeleteSuccess2" translate="yes" xml:space="preserve">
+          <source>Die Github Zugangsdaten wurden nicht gelöscht.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The Github account was not deleted.</target></trans-unit>
+        <trans-unit id="Resources\AccountDeleteSuccess" translate="yes" xml:space="preserve">
+          <source>Die Github Zugangsdaten wurden in der App gelöscht.</source>
+          <target state="signed-off">The Github account has been deleted.</target></trans-unit>
+        <trans-unit id="Resources\AccountDeleteMessageOK" translate="yes" xml:space="preserve">
+          <source>Löschen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Delete</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDeleteMessageCancel" translate="yes" xml:space="preserve">
+          <source>Abbrechen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Cancel</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDeleteMessage" translate="yes" xml:space="preserve">
+          <source>Sollen die in der App gespeicherten Zugangsdaten für den Github Account unwiderruflich gelöscht werden?</source>
+          <target state="signed-off">Delete the credentials in the app for the Github account?</target></trans-unit>
+        <trans-unit id="Resources\AccountDataDeleteSuccess2" translate="yes" xml:space="preserve">
+          <source>Die Benachrichtigungen wurden nicht gelöscht.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The notifications were not deleted.</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDataDeleteSuccess" translate="yes" xml:space="preserve">
+          <source>Die Benachrichtigungen wurden gelöscht.</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">The notifications have been deleted.</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDataDeleteMessageOK" translate="yes" xml:space="preserve">
+          <source>Löschen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Delete</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDataDeleteMessageCancel" translate="yes" xml:space="preserve">
+          <source>Abbrechen</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">Cancel</target>
+        </trans-unit>
+        <trans-unit id="Resources\AccountDataDeleteMessage" translate="yes" xml:space="preserve">
+          <source>Sollen die in der App gespeicherten Benachrichtigungen unwiderruflich gelöscht werden?</source>
+          <target state="signed-off">Delete the notifications in the app irrevocably?</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

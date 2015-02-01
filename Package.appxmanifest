@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="49083fbmnds.gitme" Publisher="CN=928522E1-3C70-4254-9B40-329EA6EBB5BA" Version="1.1.0.9" />
+  <mp:PhoneIdentity PhoneProductId="44709754-6180-4c6c-98a0-e6d1e1dd7a9d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>git:me</DisplayName>
+    <PublisherDisplayName>fbmnds</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GitMe.App">
+      <m3:VisualElements DisplayName="git:me" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="git:me - Github Benachrichtigungen auf dem Windows Phone" ForegroundText="light" BackgroundColor="lightBlue" ToastCapable="false">
+        <m3:DefaultTile Square71x71Logo="Assets\Square71x71Logo.png">
+        </m3:DefaultTile>
+      </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.cachedFileUpdater" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+</Package>
